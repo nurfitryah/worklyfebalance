@@ -164,18 +164,15 @@ dashboardPage(title = "Working Hours",
                                   side = "left",
                                   width = 12,
                                   height = "650px",
-                                  tabPanel(tags$b("Kepegawaian"),
-                                           highchartOutput(outputId = "employ", height = "650px")
-                                  ),
                                   tabPanel(tags$b("WFH"),
                                            highchartOutput(outputId = "wfh", height = "650px")
                                   ),
                                   tabPanel(tags$b("Jam Kerja"),
                                            highchartOutput(outputId = "work_hour", height = "650px")
                                   ),
-                                  tabPanel(tags$b("Lemburan"),
-                                           highchartOutput(outputId = "overtime", height = "650px")
-                                  ),
+                                  tabPanel(tags$b("Kepuasan Respondent"),
+                                           highchartOutput(outputId = "tanggap", height = "650px")
+                                           ),
                                   tabPanel(tags$b("Resign?"),
                                            highchartOutput(outputId = "resign", height = "650px")
                                   )
@@ -213,9 +210,6 @@ dashboardPage(title = "Working Hours",
                                            ),
                                   tabPanel(tags$b("Per Cluster"),
                                            highchartOutput(outputId = "reg_per_clus", height = "650px")
-                                           ),
-                                  tabPanel(tags$b("UU Right-to-Disconnect"),
-                                           highchartOutput(outputId = "UUD", height = "650px")
                                            )
                               )
                           )
@@ -236,7 +230,7 @@ dashboardPage(title = "Working Hours",
                               
                               br(),
                               
-                              h4("Detail explanation :", tags$a(href = "https://rpubs.com/fitryah_nur/worklyfebalance", "RPubs")
+                              h4("Detail explanation :", tags$a(href = "https://rpubs.com/fitryah_nur/worklifebalance", "RPubs")
                               ),
                               
                               br(),
